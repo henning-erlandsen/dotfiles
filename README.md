@@ -1,7 +1,7 @@
 Dotfiles
 ========
 
-Settings repo for syncing configurations across Windows machines. Install script places Hard Links to each settings file at the locations specified in [](install.sh).
+Settings repo for syncing configurations across Windows machines. Install script places Hard Links to each settings file at the locations specified in [install.sh](install.sh).
 
 Limitations
 -----------
