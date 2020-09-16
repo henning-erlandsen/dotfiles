@@ -28,12 +28,26 @@ export GIT_PS1_SHOWDIRTYSTATE=0
 alias mine='cd /d/Minecraftpe'
 alias subl="'/c/Program Files/Sublime Text 2/sublime_text.exe'"
 
-function pegen()
+
+function validate
 {
-	pushd $(git rev-parse --show-toplevel)/build_win32_dx11_x64_unity
-	cmake ..
-	popd
+	shopt -s nullglob
+
+	files=(build/win/*.sln)
+	if [[ "${#files[@]}" -eq "1" ]]; then
+		return 0
+	else
+		echo "Found multiple solution files after generating!"
+		ls -lc build/win/*.sln
+		return 1
+	fi
 }
 
+function pegen
+{
+	cmake build/win
+	validate
+	return
+}
 PATH=$PATH:/d/scripts
 
