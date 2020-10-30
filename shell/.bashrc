@@ -25,8 +25,7 @@ alias gbl="git for-each-ref --sort=-committerdate refs/heads/ --count=10 | sed '
 
 export GIT_PS1_SHOWDIRTYSTATE=0
 
-alias mine='cd /d/Minecraftpe'
-alias subl="'/c/Program Files/Sublime Text 2/sublime_text.exe'"
+alias mine='cd /e/bedrock'
 
 
 function validate
