@@ -2,13 +2,15 @@
 	recentlySeenVersion = 2.25.0.windows.1
 [alias]
 	co = checkout
-    su = submodule update --init --recursive
-    sync = submodule sync --recrusive
+	su = submodule update --init --recursive
+	sync = submodule sync --recrusive
 	st = status
 	cam = commit -a -m
 	cp = cherry-pick
 	sync = submodule sync --recursive
 	db = branch -D
+[core]
+	fsmonitor = true
 [user]
 	email = henning.erlandsen@mojang.com
 	name = Henning Erlandsen
