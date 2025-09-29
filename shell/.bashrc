@@ -78,8 +78,14 @@ function check_submodules
 
 function pegen
 {
-	cmake --preset="win32_x64" -DUNITY_BUILDS_ENABLED=ON -DENABLED_LIVE_PP=ON $@
+	cmake -Wno-deprecated --preset="win32_x64" -DENABLED_LIVE_PP=ON -DCMAKE_SUPPRESS_REGENERATION=TRUE -DTEST_INCLUDE_INGAME_UNIT_TESTS=OFF $@
+	echo -e '\a'
 	return
+}
+
+function gfocosugen
+{
+	gfo $1 && g co $1 && g su && pegen
 }
 PATH=$PATH:/d/scripts:/c/Program\ Files\ \(x86\)/Microsoft\ Visual\ Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/
 
