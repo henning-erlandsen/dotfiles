@@ -33,13 +33,12 @@ alias gbl="git for-each-ref --sort=-committerdate refs/heads/ --count=10 | sed '
 
 alias gen_win_ogl='cmake -DUNITY_BUILDS_ENABLED=ON'
 
-alias mine='cd /e/bedrock'
-alias subl="'/c/Program Files/Sublime Text 2/sublime_text.exe'"
+alias mine='cd /d/bedrock'
 
 export GIT_PS1_SHOWDIRTYSTATE=0
 export NDK_ROOT='C:/lib/android/android-ndk-r21c'
 export ANDROID_SDK_ROOT='C:/Users/heeeland/AppData/Local/Android/Sdk'
-export CMakeNuGetPackagePath='E:/temp/nuget'
+export CMakeNuGetPackagePath='D:/temp/nuget'
 
 function validate
 {
@@ -79,8 +78,7 @@ function check_submodules
 
 function pegen
 {
-	cmake --preset="win32_ogl_x64" -DUNITY_BUILDS_ENABLED=ON -DENABLED_LIVE_PP=ON $@
-#	validate
+	cmake --preset="win32_x64" -DUNITY_BUILDS_ENABLED=ON -DENABLED_LIVE_PP=ON $@
 	return
 }
 PATH=$PATH:/d/scripts:/c/Program\ Files\ \(x86\)/Microsoft\ Visual\ Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/

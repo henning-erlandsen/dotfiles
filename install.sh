@@ -20,7 +20,7 @@ function install {
 
         DIR=${2%/*}
         mkdir --parents "$DIR"
-        ./link.bat "$2" "$1"
+        cp "$1" "$2"
     fi
 }
 
