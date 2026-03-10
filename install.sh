@@ -30,3 +30,9 @@ install shell/.bashrc ~/.bashrc
 install windows-terminal/settings.json ~/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json
 install resharper/GlobalSettingsStorage.DotSettings ~/AppData/Roaming/JetBrains/Shared/vAny/GlobalSettingsStorage.DotSettings
 install vim/.vimrc ~/.vimrc
+
+read -p "Install Vundle? " -n 1 -r
+echo    # (optional) move to a new line
+if [[ $REPLY =~ ^[Yy]$ ]]; then
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+fi
