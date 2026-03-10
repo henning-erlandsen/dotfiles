@@ -16,3 +16,5 @@
 
 [gui]
 	recentrepo = E:/bedrock
+[core]
+	longpaths = true

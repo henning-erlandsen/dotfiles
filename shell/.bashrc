@@ -25,6 +25,7 @@ alias gp='git push'
 alias gpf='git push --force-with-lease'
 alias gpsup='git push --set-upstream origin "$(git rev-parse --abbrev-ref HEAD)"'
 alias grc='git rebase --continue'
+alias gri='git rebase -i'
 alias grom='git rebase origin/main'
 alias gs='git status --ignore-submodules'
 alias gss='git status'
@@ -78,7 +79,7 @@ function check_submodules
 
 function pegen
 {
-	cmake -Wno-deprecated --preset="win32_x64" -DENABLED_LIVE_PP=ON -DCMAKE_SUPPRESS_REGENERATION=TRUE -DTEST_INCLUDE_INGAME_UNIT_TESTS=OFF $@
+	cmake -Wno-deprecated --preset="win32_x64" -DENABLED_LIVE_PP=ON -DCMAKE_SUPPRESS_REGENERATION=TRUE -DINGAME_TESTS=FUNCTIONAL $@
 	echo -e '\a'
 	return
 }
@@ -87,5 +88,5 @@ function gfocosugen
 {
 	gfo $1 && g co $1 && g su && pegen
 }
-PATH=$PATH:/d/scripts:/c/Program\ Files\ \(x86\)/Microsoft\ Visual\ Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/
+PATH=$PATH:/d/scripts:/c/Program\ Files\ \(x86\)/Microsoft\ Visual\ Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/:/c/Users/heeeland/AppData/Local/MCPE_DevTools/LLVM/20.1.8/bin/
 
