@@ -84,9 +84,9 @@ function pegen
 	return
 }
 
-function gfocosugen
+function gfocogen
 {
-	gfo $1 && g co $1 && g su && pegen
+	gfo $1 && g co $1 && pegen
 }
 PATH=$PATH:/d/scripts:/c/Program\ Files\ \(x86\)/Microsoft\ Visual\ Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/:/c/Users/heeeland/AppData/Local/MCPE_DevTools/LLVM/20.1.8/bin/
 

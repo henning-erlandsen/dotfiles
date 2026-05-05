@@ -82,6 +82,11 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
+                "colorScheme": "Dimidium",
+                "font": 
+                {
+                    "face": "Cascadia Code PL"
+                },
                 "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
                 "hidden": false,
                 "name": "Git Bash",
@@ -120,7 +125,32 @@
             }
         ]
     },
-    "schemes": [],
+    "schemes": 
+    [
+        {
+            "background": "#141414",
+            "black": "#000000",
+            "blue": "#0575D8",
+            "brightBlack": "#817E7E",
+            "brightBlue": "#688DFD",
+            "brightCyan": "#32E0FB",
+            "brightGreen": "#37E57B",
+            "brightPurple": "#ED6FE9",
+            "brightRed": "#FF643B",
+            "brightWhite": "#DEE3E4",
+            "brightYellow": "#FCCD1A",
+            "cursorColor": "#37E57B",
+            "cyan": "#1DB6BB",
+            "foreground": "#BAB7B6",
+            "green": "#60B442",
+            "name": "Dimidium (Copy)",
+            "purple": "#AF5ED2",
+            "red": "#CF494C",
+            "selectionBackground": "#8DB8E5",
+            "white": "#BAB7B6",
+            "yellow": "#DB9C11"
+        }
+    ],
     "themes": [],
     "wordDelimiters": " ()':"
 }
