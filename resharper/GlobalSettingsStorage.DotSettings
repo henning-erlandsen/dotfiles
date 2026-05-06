@@ -75,10 +75,8 @@
 	<s:Int64 x:Key="/Default/CodeStyle/CppSortIncludes/UnmatchedHeaderOrder/@EntryValue">5</s:Int64>
 	<s:Boolean x:Key="/Default/CodeStyle/EditorConfig/EnableEditorConfigSupport/@EntryValue">False</s:Boolean>
 	
-	<s:String x:Key="/Default/CodeStyle/FileHeader/FileHeaderText/@EntryValue">/********************************************************&#xD;
-*   (c) Mojang. All rights reserved                     *&#xD;
-*   (c) Microsoft. All rights reserved.                 *&#xD;
-*********************************************************/</s:String>
+	<s:String x:Key="/Default/CodeStyle/FileHeader/FileHeaderText/@EntryValue">Copyright (c) Mojang AB.  All rights reserved.&#xD;
+</s:String>
 	<s:Boolean x:Key="/Default/CodeStyle/Generate/=CppConstructor/@KeyIndexDefined">True</s:Boolean>
 	<s:String x:Key="/Default/CodeStyle/Generate/=CppConstructor/Options/=AcceptParameterKind/@EntryIndexedValue">Const reference</s:String>
 	<s:String x:Key="/Default/CodeStyle/Generate/=CppConstructor/Options/=AccessRight/@EntryIndexedValue">public</s:String>
@@ -195,7 +193,7 @@
 	<s:String x:Key="/Default/Housekeeping/Layout/DialogWindows/OwnedDialogPosition/Position/=AdvancedSearchDialog/@EntryIndexedValue">[0,184.8](500,468.8)</s:String>
 	<s:String x:Key="/Default/Housekeeping/Layout/DialogWindows/RefactoringWizardWindow/Location/@EntryValue">7.2,-244.8</s:String>
 	<s:Boolean x:Key="/Default/Housekeeping/LiveTemplatesHousekeeping/HotspotSessionHintIsShown/@EntryValue">True</s:Boolean>
-	<s:String x:Key="/Default/Housekeeping/OptionsDialog/SelectedPageId/@EntryValue">CommonFormatter</s:String>
+	<s:String x:Key="/Default/Housekeeping/OptionsDialog/SelectedPageId/@EntryValue">FileHeaderTextPage</s:String>
 	<s:Boolean x:Key="/Default/Housekeeping/RefactoringsMru/RenameRefactoring/DoRenameFile/@EntryValue">False</s:Boolean>
 	<s:Boolean x:Key="/Default/Housekeeping/RefactoringsMru/RenameRefactoring/DoSearchForTextInStrings/@EntryValue">False</s:Boolean>
 	<s:Boolean x:Key="/Default/Housekeeping/TreeModelBrowserPanelPersistence/IsPreviewVisible/=SearchInheritorsDescriptor/@EntryIndexedValue">True</s:Boolean>
@@ -240,6 +238,11 @@
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=80F53CC70229A44CBB68E76AACC99696/Shortcut/@EntryValue">unique_ptr</s:String>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=80F53CC70229A44CBB68E76AACC99696/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=80F53CC70229A44CBB68E76AACC99696/Text/@EntryValue">std::unique_ptr&lt;$SELECTION$&gt;</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=83CCE6429EB23444919E0C842CBA0BF5/Image/@EntryValue"></s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=83CCE6429EB23444919E0C842CBA0BF5/Text/@EntryValue">$HEADER$&#xD;
+&#xD;
+#pragma once&#xD;
+</s:String>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8CB0B4CA6C6B9A409D7B463DA37F9EF3/@KeyIndexDefined">True</s:Boolean>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8CB0B4CA6C6B9A409D7B463DA37F9EF3/Applicability/=Surround/@EntryIndexedValue">True</s:Boolean>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8CB0B4CA6C6B9A409D7B463DA37F9EF3/Description/@EntryValue">Wraps constructor in a make_unique</s:String>
@@ -249,6 +252,44 @@
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8CB0B4CA6C6B9A409D7B463DA37F9EF3/Shortcut/@EntryValue">make_unique</s:String>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8CB0B4CA6C6B9A409D7B463DA37F9EF3/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8CB0B4CA6C6B9A409D7B463DA37F9EF3/Text/@EntryValue">std::make_unique&lt;$SELECTION$&gt;</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C72B7CD086ABB54CA1E6A9E75D5C51F1/Field/=INCLUDE/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C72B7CD086ABB54CA1E6A9E75D5C51F1/Field/=INCLUDE/Expression/@EntryValue">getFileNameWithoutExtension()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C72B7CD086ABB54CA1E6A9E75D5C51F1/Field/=INCLUDE/InitialRange/@EntryValue">-1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C72B7CD086ABB54CA1E6A9E75D5C51F1/Field/=INCLUDE/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C72B7CD086ABB54CA1E6A9E75D5C51F1/Field/=PCH/@KeyIndexDefined">False</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C72B7CD086ABB54CA1E6A9E75D5C51F1/Image/@EntryValue"></s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C72B7CD086ABB54CA1E6A9E75D5C51F1/Text/@EntryValue">$HEADER$&#xD;
+&#xD;
+$INCLUDE$.h&#xD;
+&#xD;
+$END$&#xD;
+</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D73025404F8A084FB4F4086847B1AD97/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D73025404F8A084FB4F4086847B1AD97/Applicability/=File/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D73025404F8A084FB4F4086847B1AD97/CustomProperties/=Extension/@EntryIndexedValue">cpp</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D73025404F8A084FB4F4086847B1AD97/CustomProperties/=FileName/@EntryIndexedValue">UnitTests</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D73025404F8A084FB4F4086847B1AD97/CustomProperties/=ValidateFileName/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D73025404F8A084FB4F4086847B1AD97/Description/@EntryValue">Unit Test</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D73025404F8A084FB4F4086847B1AD97/Field/=HEADER/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D73025404F8A084FB4F4086847B1AD97/Field/=HEADER/Expression/@EntryValue">cppFileheader()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D73025404F8A084FB4F4086847B1AD97/Field/=HEADER/InitialRange/@EntryValue">-1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D73025404F8A084FB4F4086847B1AD97/Field/=HEADER/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D73025404F8A084FB4F4086847B1AD97/Field/=TESTNAME/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D73025404F8A084FB4F4086847B1AD97/Field/=TESTNAME/Expression/@EntryValue">getAlphaNumericMainFileNameWithoutExtension()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D73025404F8A084FB4F4086847B1AD97/Field/=TESTNAME/InitialRange/@EntryValue">-1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D73025404F8A084FB4F4086847B1AD97/Field/=TESTNAME/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D73025404F8A084FB4F4086847B1AD97/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D73025404F8A084FB4F4086847B1AD97/Scope/=CD5B1AEA8099834C8F10F84286AA88CA/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D73025404F8A084FB4F4086847B1AD97/Scope/=CD5B1AEA8099834C8F10F84286AA88CA/Type/@EntryValue">InCppProjectFile</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D73025404F8A084FB4F4086847B1AD97/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D73025404F8A084FB4F4086847B1AD97/Text/@EntryValue">$HEADER$&#xD;
+#include &lt;test/client/UnitTestHelpers/UnitTestSharedHeader.h&gt;&#xD;
+&#xD;
+BR_TEST_CLASS($TESTNAME$) {&#xD;
+	BR_TEST_METHOD(Test) {&#xD;
+		$END$&#xD;
+	}&#xD;
+};</s:String>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/Todo/EnableMultilineTodoComments/@EntryValue">False</s:Boolean>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=0C76DCA808FA6641B18C888FB2EA94E5/@KeyIndexDefined">True</s:Boolean>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=0C76DCA808FA6641B18C888FB2EA94E5/MatchComments/@EntryValue">True</s:Boolean>
